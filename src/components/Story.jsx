@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { RiRoundedCorner } from "react-icons/ri";
 import RoundedCorners from "./RoundedCorners";
 import Button from "./Button";
+import { TiArrowDown, TiLocationArrow } from "react-icons/ti";
 
 const Story = () => {
   const frameRef = useRef("null");
@@ -73,8 +74,10 @@ const Story = () => {
             </p>
             <Button
               title="discover prologue"
-              containerClass="mt-5"
+              containerClass="mt-5 flex-center gap-1"
               id="realm-button"
+              rightIcon={<TiLocationArrow />}
+              
             />
           </div>
         </div>
